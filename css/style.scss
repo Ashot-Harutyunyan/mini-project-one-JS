@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section-search {
+    height: 100px;
+    padding-top: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    button {
+        display: inline-block;
+        font-size: 25px;
+        padding: 13px 50px;
+        border-radius: 25px;
+        cursor: pointer;
+        border: none;
+        color: darkblue;
+        background-color: rgb(239, 236, 232);
+        box-shadow: 1px 1px 4px 1px rgb(73, 71, 75);
+        margin-left: 20px;
+    }
+}
+.input-text {
+    border: 2px solid black;
+    display: inline-block;
+    width: max-content;
+    border-radius: 25px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    i {
+        font-size: 20px;
+        padding: 15px;
+    }
+    input {
+        width: 280px;
+        height: 55px;
+        font-size: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border-color: white;
+        border: none;
+    }
+    input:active, :hover, :focus {
+        outline: 0;
+        outline-offset: 0;
+    }
+
+}
+.conteiner {
+    width: 90%;
+    margin: 0 auto;
+    padding: 25px 0px;
+    text-align: center;
+    .people {  
+        height: 620px;
+        display: inline-block;
+        margin: 50px;
+        text-align: center;
+    }
+    img {
+        border-radius: 50%;
+    }
+    h3 {
+        margin: 20px 0px;
+    }
+    .info {
+        padding: 8px 20px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        border: none;
+        box-shadow: 1px 1px 5px 1px rgb(73, 71, 75);
+        font-size: 16px;
+        background-color: rgb(239, 236, 232);
+        color: darkblue;
+        cursor: pointer;
+    }
+    .peopleInfo {
+        height: 0px;
+        transition: all 1s;
+        position: absolute;
+        width: 400px;
+    }
+    .five {
+        height: 180px;
+        transition: all 1s;
+    }
+    .open {
+       opacity: 1;
+       max-height: 45px;
+       transition: all 2s;
+       margin-bottom: 5px;
+    }
+}    
+.peopleInfo h2 {
+    font-weight: 400;
+    margin-bottom: 5px;
+    max-height: 0;
+    opacity: 0;
+    transition: all .5s;
+    border-bottom: 1px solid darkblue;
+    width: max-content;
+    margin: 0 auto;
+    transform: translateX(-50px);
+}
+.fa-angles-left {
+    font-size: 35px;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    color:rgb(180, 66, 66);
+    cursor: pointer;
+}
+#user {
+    position: absolute;
+    right: 50px;
+    top: 25px;
+    width: 180px;
+    height: 25px;
+    font-size: 18px;
+    option {
+        font-size: 18px;
+    }
+}
+.empty {
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    color: crimson;
+}
+@media screen and (max-width: 1100px){
+    .fa-angles-left {
+        position: relative;
+        margin-bottom: 20px;
+    }
+}
